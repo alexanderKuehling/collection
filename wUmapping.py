@@ -21,25 +21,25 @@ def wholefunction(share_code):
  
         #iputs collected
         #share_code = input("code of the share?  ")
-        days_of_share_values = 3000#int(input("how many days of the share?  "))
+        days_of_share = 3000#int(input("how many days of the share?  "))
         end_of_share = 200# int(input("How many day ago should the data end"))
-        number_input_days = 25#int(input("How many days for Input? "))
+        number_input_days = 25
         
         dirname = os.path.dirname(__file__)
         filename = os.path.join(dirname, 'data/'+share_code+'.csv')
 
         #get the data from yahoo
         endtime = dt.date.today() - dt.timedelta(days = 1)
-        starttime =  dt.date.today() - dt.timedelta(days = days_of_share_values)
+        starttime =  dt.date.today() - dt.timedelta(days = days_of_share)
         share = pdr.get_data_yahoo(share_code, start = starttime, end = endtime )
-        share_fitted = share.head(int(days_of_share_values*0.7-end_of_share*0.7))
+        share_fitted = share.head(int(days_of_share*0.7-end_of_share*0.7))
         share_fitted.to_csv(filename)
         close = share["Close"]
     
     
         #return data
-        return close, number_input_days, share_code,days_of_share_values,filename
-    close,number_input_days, share_code, days_of_share_values,filename= data()
+        return close, number_input_days, share_code,days_of_share,filename
+    close,number_input_days, share_code, days_of_share,filename= data()
 
 
     CSV_FILE  = (filename)
