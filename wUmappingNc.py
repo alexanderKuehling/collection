@@ -186,18 +186,18 @@ html_content = f"""<!DOCTYPE html>
 <body>
     <p id="msg">prediction dax: {results[0]} </p>
     <p id="msg">prediction msci: {results[1]} </p>
-    <p id="msg">prediction dow jones: {results[2]} </p>
-    <p id="msg">prediction standart & poors: {results[3]} </p>
-    <p id="msg">prediction telekom: {results[4]} </p>
-    <p id="msg">prediction bayer: {results[5]} </p>
-    <p id="msg">prediction basf: {results[6]} </p>
-    <p id="msg">prediction commerzbank: {results[7]} </p>
-    <p id="msg">prediction bmw: {results[8]} </p>
-    <p id="msg">prediction vw: {results[9]} </p>
-    <p id="msg">prediction volvo: {results[10]} </p>
+    <p id="msg">prediction djia: {results[2]} </p>
+    <p id="msg">prediction spgi: {results[3]} </p>
+    <p id="msg">prediction dte: {results[4]} </p>
+    <p id="msg">prediction bayry: {results[5]} </p>
+    <p id="msg">prediction basfy: {results[6]} </p>
+    <p id="msg">prediction crzby: {results[7]} </p>
+    <p id="msg">prediction bmwyy: {results[8]} </p>
+    <p id="msg">prediction vwagy: {results[9]} </p>
+    <p id="msg">prediction vlvly: {results[10]} </p>
     <p id="msg">prediction gold: {results[11]} </p>
-    <p id="msg">prediction tesla: {results[12]} </p>
-    <p id="msg">prediction amazon: {results[13]} </p>
+    <p id="msg">prediction tsla: {results[12]} </p>
+    <p id="msg">prediction amzn: {results[13]} </p>
 </body>
 </html>"""
 
