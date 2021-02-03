@@ -130,7 +130,6 @@ def wholefunction(share_code):
             prediction_current = stock_model.predict(data_prediction)
             
             #refresh input with predicted data
-            prediction_current = prediction_current+(((prediction_current[0]) -(previous_prediction[0])))
             prediction_current = prediction_current.reshape(1,prediction_current.shape[0],1)
             data_prediction = np.append(data_prediction,prediction_current)
             whole_current_data = np.append(whole_current_data,prediction_current)
